@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html  ng-app="Bemvindos">
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.js"></script>
+    <script>
+    angular.module("Bemvindos", []); 
+    angular.module("Bemvindos").controller ("BemvindosCtrl", 
+    function ($scope){
+         $scope.message = "Olá,sejam Bem vindos!!";
+
+    });
+    </script>
+
+ <title>Bem Vindos</title>
+  </head>
+
+  <body>
+    <div ng-controller="BemvindosCtrl">
+      {{message}}
+    </div>
+   
+
+  </body>
+</html>
